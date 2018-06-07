@@ -13,6 +13,10 @@ public class Triangle
         i=sc.nextInt();
         System.out.println();   
         verticalAsterisk(i);
+        System.out.print("For right triangle n=");
+        i=sc.nextInt();
+        System.out.println();   
+        rightTriangle(i);
     }
     public static void singleAsterisk()
     {
@@ -26,6 +30,15 @@ public class Triangle
     public static void verticalAsterisk(int n)
     {
         for(int i=0;i<n;i++)
-        System.out.println("*");
+            System.out.println("*");
+    }
+    public static void rightTriangle(int n)
+    {
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<=i;j++)
+                System.out.print("*");
+            System.out.println();
+        }
     }
 }
