@@ -5,10 +5,14 @@ public class Triangle
     {
         singleAsterisk();
         Scanner sc=new Scanner(System.in);
-        System.out.print("n=");
+        System.out.print("For horizontal line n=");
         int i=sc.nextInt();
         System.out.println();   
         horizontalAsterisk(i);
+        System.out.print("For vertical line n=");
+        i=sc.nextInt();
+        System.out.println();   
+        verticalAsterisk(i);
     }
     public static void singleAsterisk()
     {
@@ -17,6 +21,11 @@ public class Triangle
     public static void horizontalAsterisk(int n)
     {
     String result=new String(new char[n]).replace('\0','*');
-    System.out.print(result);
+    System.out.println(result);
+    }
+    public static void verticalAsterisk(int n)
+    {
+        for(int i=0;i<n;i++)
+        System.out.println("*");
     }
 }
